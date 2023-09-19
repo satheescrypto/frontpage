@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD RATE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>FD Rate</h2>
+        <div id="inputdiv">
+            <input type="text" id="input" placeholder="type months">
+        </div>
+
+        <div>
+            <button id="source" onclick="fdrate()"></button>
+        </div>
+        <div id="result">
+            
+        </div>
+    </div>
+    <script>
+     //<3 months-5.8%
+     // 3-6 months-6.5%
+     // 7-9 months - 6.8%
+     // >-10 months - 7%
+      
+     function fdrate(){
+
+       const months=Number(document.getElementById("input").value)
+
+       let rate=0
+
+       if(months<3)
+       rate= 5.8
+
+       else if(months>=3 && months<=6)
+       rate=6.5
+
+       else if (months>=7 && months<=9)
+       rate=7
+
+       else 
+       rate=8
+
+       let result = document.querySelector("#result")
+       result.innerHTML='your interest is'+rate+'%' 
+     }
+    </script>
+    
+</body>
+</html>

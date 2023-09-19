@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    min-height: 70vh;
+    width: 70%;
+    background: black;
+    
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5),
+                 -5px -5px 6px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;  
+}
+
+h1 {
+    color: #FC00FF;
+    font-size: 40px;
+    position: relative;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.form {
+    min-width: 50%;
+    min-height: 50vh;
+    color: white;
+}
+
+label {
+    font-size: 20px;
+    font-family: Arial,;
+    line-height: 2;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+input {
+   color: white; 
+   background: transparent;
+   border-bottom: 1px solid white;
+   border-right: 0px;
+   border-left: 0.3px;
+   border-top: 0.2px;
+   margin-left: 20px;
+   padding-top: 10px;
+
+}
+
+button {
+    outline: none;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    padding:5px 60px;
+    background-color: #CF00F0;
+    color: white;
+}
+
+#image {
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+    bottom: -8rem;
+    top: 8.5rem;
+    right: 4rem;
+    z-index: 2;
+    background: black;
+    padding-right: 5px;
+    margin-bottom: -5pxpx;
+
+
+}
+
+#insta {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 30%;
+    position: absolute;
+    top: 3rem;
+    right: 13rem;
+
+}
+
+#head {
+    position: absolute;
+    color: white;
+    right: 4rem;
+    top: 12rem;
+    text-align: center;
+    font-size: 50px;
+    padding-right: 3rem;
+    
+}
+
+.path {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,#00DBDe 0%,#FC00FF 100%);
+    clip-path: circle(400px at right 140px);
+}
+
+a {
+    color: rgb(from color r g b);
+    padding: 20px;
+}
+
+a:hover {
+    color: red;
+}
+
+button:hover {
+   background-color: green;
+}

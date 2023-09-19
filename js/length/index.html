@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length cutter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Length</h1><br>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="length in cm"><br><br>
+        </div>
+        <div>
+            <button type="submit"  onclick="convert()">convert to inches</button>
+        </div>
+        <div id="result">
+            
+        </div>
+    </div>  
+</body>
+<script>
+    function convert(){
+     let cmval=   Number (document.getElementById("input").value);
+     let incval=cmval/2.54;
+     let result=document.getElementById("result");
+     result.innerHTML=incval.toFixed(2)
+    
+       }
+     </script>
+</html>
